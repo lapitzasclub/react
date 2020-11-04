@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.llaparra.react",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.10.4",
+    "applicationType": "monolith",
+    "baseName": "react",
+    "packageName": "com.llaparra.react",
+    "packageFolder": "com/llaparra/react",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWNjMzk2NTI1YTkxNzYxYjJhMjFiOGUwNDM5ZjY0MjZlMWFjZjI0MmMxN2NiNWYyNWYyZWY3YjE2MTUyNGQ0NDY0MWQxNTRhYzNhNWZiNGRkMTk5Y2RkOWMxMTQ5YzIxZmMzOWVmN2ZkNGQzMGI0MzZiOTBlZjg1NGMxOTM0OGQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1604474654382,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": ["es"],
+    "blueprints": []
+  }
+}
