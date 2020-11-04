@@ -5,6 +5,7 @@ import io.github.jhipster.web.util.HeaderUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.dao.ConcurrencyFailureException;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageConversionException;
@@ -107,8 +108,34 @@ public class ExceptionTranslator implements ProblemHandling, SecurityAdviceTrait
     }
 
     @ExceptionHandler
+    public ResponseEntity<Problem> handleEmailAlreadyUsedException(com.llaparra.react.service.EmailAlreadyUsedException ex, NativeWebRequest request) {
+        EmailAlreadyUsedException problem = new EmailAlreadyUsedException();
+        return create(problem, request, HeaderUtil.createFailureAlert(applicationName,  true, problem.getEntityName(), problem.getErrorKey(), problem.getMessage()));
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<Problem> handleUsernameAlreadyUsedException(com.llaparra.react.service.UsernameAlreadyUsedException ex, NativeWebRequest request) {
+        LoginAlreadyUsedException problem = new LoginAlreadyUsedException();
+        return create(problem, request, HeaderUtil.createFailureAlert(applicationName,  true, problem.getEntityName(), problem.getErrorKey(), problem.getMessage()));
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<Problem> handleInvalidPasswordException(com.llaparra.react.service.InvalidPasswordException ex, NativeWebRequest request) {
+        return create(new InvalidPasswordException(), request);
+    }
+
+    @ExceptionHandler
     public ResponseEntity<Problem> handleBadRequestAlertException(BadRequestAlertException ex, NativeWebRequest request) {
         return create(ex, request, HeaderUtil.createFailureAlert(applicationName, true, ex.getEntityName(), ex.getErrorKey(), ex.getMessage()));
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<Problem> handleConcurrencyFailure(ConcurrencyFailureException ex, NativeWebRequest request) {
+        Problem problem = Problem.builder()
+            .withStatus(Status.CONFLICT)
+            .with(MESSAGE_KEY, ErrorConstants.ERR_CONCURRENCY_FAILURE)
+            .build();
+        return create(ex, problem, request);
     }
 
     @Override

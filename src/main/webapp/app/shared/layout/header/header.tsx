@@ -54,7 +54,9 @@ const Header = (props: IHeaderProps) => {
           <Nav id="header-tabs" className="ml-auto" navbar>
             <Home />
             {props.isAuthenticated && <EntitiesMenu />}
-            {props.isAuthenticated && props.isAdmin && <AdminMenu showSwagger={props.isSwaggerEnabled} />}
+            {props.isAuthenticated && props.isAdmin && (
+              <AdminMenu showSwagger={props.isSwaggerEnabled} showDatabase={!props.isInProduction} />
+            )}
             <LocaleMenu currentLocale={props.currentLocale} onClick={handleLocaleChange} />
             <AccountMenu isAuthenticated={props.isAuthenticated} />
           </Nav>
