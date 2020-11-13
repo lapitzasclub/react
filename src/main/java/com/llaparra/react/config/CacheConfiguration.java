@@ -48,6 +48,8 @@ public class CacheConfiguration {
             createCache(cm, com.llaparra.react.domain.User.class.getName());
             createCache(cm, com.llaparra.react.domain.Authority.class.getName());
             createCache(cm, com.llaparra.react.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.llaparra.react.domain.OfertaEmpleo.class.getName());
+            createCache(cm, com.llaparra.react.domain.Publicacion.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

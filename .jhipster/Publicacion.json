@@ -1,0 +1,37 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "summary",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20201113091101",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "publicacion",
+  "databaseType": "sql",
+  "readOnly": true,
+  "jpaMetamodelFiltering": true,
+  "pagination": "infinite-scroll"
+}

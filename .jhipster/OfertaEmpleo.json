@@ -1,0 +1,45 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "place",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "slots",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMin": "1",
+      "fieldValidateRulesMax": "999"
+    },
+    {
+      "fieldName": "contract",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "term",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    }
+  ],
+  "changelogDate": "20201113085153",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "oferta_empleo",
+  "databaseType": "sql",
+  "readOnly": true,
+  "jpaMetamodelFiltering": true,
+  "pagination": "infinite-scroll"
+}

@@ -14,6 +14,12 @@ export const EntitiesMenu = props => (
       id="entity-menu"
       style={{ maxHeight: '80vh', overflow: 'auto' }}
     >
+      <MenuItem icon="asterisk" to="/oferta-empleo">
+        <Translate contentKey="global.menu.entities.ofertaEmpleo" />
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/publicacion">
+        <Translate contentKey="global.menu.entities.publicacion" />
+      </MenuItem>
       {/* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */}
     </NavDropdown>
   </span>

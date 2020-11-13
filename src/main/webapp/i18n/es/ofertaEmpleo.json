@@ -1,0 +1,26 @@
+{
+  "reactApp": {
+    "ofertaEmpleo": {
+      "home": {
+        "title": "Oferta Empleos",
+        "createLabel": "Crear nuevo Oferta Empleo",
+        "createOrEditLabel": "Crear o editar Oferta Empleo",
+        "notFound": "Ningún Oferta Empleos encontrado"
+      },
+      "created": "Un nuevo Oferta Empleo ha sido creado con el identificador {{ param }}",
+      "updated": "Un Oferta Empleo ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Oferta Empleo ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Oferta Empleo {{ id }}?"
+      },
+      "detail": {
+        "title": "Oferta Empleo"
+      },
+      "title": "Title",
+      "place": "Place",
+      "slots": "Slots",
+      "contract": "Contract",
+      "term": "Term"
+    }
+  }
+}
