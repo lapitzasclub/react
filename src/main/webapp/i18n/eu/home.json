@@ -1,0 +1,19 @@
+{
+  "home": {
+    "title": "eu_¡Bienvenido, Java Hipster!",
+    "subtitle": "eu_Esta es su página de inicio",
+    "logged": {
+      "message": "eu_Está conectado como \"{{username}}\"."
+    },
+    "question": "eu_Si tiene preguntas sobre JHipster:",
+    "link": {
+      "homepage": "eu_Página de inicio de JHipster",
+      "stackoverflow": "eu_JHipster en Stack Overflow",
+      "bugtracker": "eu_JHipster seguimiento de errores",
+      "chat": "eu_Sala de chat pública de JHipster",
+      "follow": "eu_contacto @jhipster en Twitter"
+    },
+    "like": "eu_Si te gusta JHipster, danos una estrella en",
+    "github": "eu_GitHub"
+  }
+}

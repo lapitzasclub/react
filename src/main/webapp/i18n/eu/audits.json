@@ -1,0 +1,28 @@
+{
+  "audits": {
+    "title": "eu_Auditorías",
+    "filter": {
+      "title": "eu_Filtrar por fecha",
+      "from": "eu_desde",
+      "to": "eu_hasta",
+      "button": {
+        "weeks": "eu_Semanas",
+        "today": "eu_hoy",
+        "clear": "eu_limpiar",
+        "close": "eu_cerrar"
+      }
+    },
+    "table": {
+      "header": {
+        "principal": "eu_Usuario",
+        "date": "eu_Fecha",
+        "status": "eu_Estado",
+        "data": "eu_Datos extra"
+      },
+      "data": {
+        "remoteAddress": "eu_Dirección remota:"
+      }
+    },
+    "notFound": "eu_No se encontró la auditoría"
+  }
+}

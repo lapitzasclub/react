@@ -1,0 +1,10 @@
+{
+  "configuration": {
+    "title": "eu_Configuración",
+    "filter": "eu_Filtro (por prefijo)",
+    "table": {
+      "prefix": "eu_Prefijo",
+      "properties": "eu_Propiedades"
+    }
+  }
+}

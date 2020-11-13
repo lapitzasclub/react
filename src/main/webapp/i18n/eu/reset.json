@@ -1,0 +1,26 @@
+{
+  "reset": {
+    "request": {
+      "title": "eu_Restablecer su contraseña",
+      "form": {
+        "button": "eu_Restablecer la contraseña"
+      },
+      "messages": {
+        "info": "eu_Introduzca la dirección de correo electrónico que utilizó para registrarse",
+        "success": "eu_Revise su correo electrónico para obtener más información sobre cómo restablecer su contraseña."
+      }
+    },
+    "finish": {
+      "title": "eu_Restablecer la contraseña",
+      "form": {
+        "button": "eu_Validar la nueva contraseña"
+      },
+      "messages": {
+        "info": "eu_Elija una contraseña nueva",
+        "success": "eu_<strong>Su contraseña ha sido restablecida.</strong> Por favor, ",
+        "keymissing": "eu_Falta la clave de reinicio.",
+        "error": "eu_Su contraseña no puede ser restablecida. Recuerde que una solicitud de reinicio de contraseña sólo es válida durante 24 horas."
+      }
+    }
+  }
+}

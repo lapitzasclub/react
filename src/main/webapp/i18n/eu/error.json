@@ -1,0 +1,14 @@
+{
+  "error": {
+    "title": "eu_¡Página de error!",
+    "http": {
+      "400": "eu_Solicitud incorrecta.",
+      "403": "eu_No tiene permisos para acceder a la página.",
+      "404": "eu_La página no existe.",
+      "405": "eu_El verbo HTTP utilizado no tiene soporte para este URL.",
+      "500": "eu_Error interno del servidor."
+    },
+    "concurrencyFailure": "eu_Otro usuario ha modificado estos datos al mismo tiempo que tú. Tus cambios fueron rechazados.",
+    "validation": "eu_Error de validación en el servidor."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "metrics": {
+    "title": "eu_Métricas de aplicación",
+    "refresh.button": "eu_Refrescar",
+    "updating": "eu_Actualizando...",
+    "jvm": {
+      "title": "eu_Métricas de JVM",
+      "memory": {
+        "title": "eu_Memoria",
+        "total": "eu_Memoria total",
+        "heap": "eu_Memoria del Heap",
+        "nonheap": "eu_Memoria no Heap"
+      },
+      "threads": {
+        "title": "eu_Hilos",
+        "all": "eu_Todo",
+        "runnable": "eu_Ejecutables",
+        "timedwaiting": "eu_Tiempo esperando",
+        "waiting": "eu_Esperando",
+        "blocked": "eu_Bloqueados",
+        "dump": {
+          "title": "eu_Volcado de hilos",
+          "id": "eu_Id: ",
+          "blockedtime": "eu_Tiempo bloqueado",
+          "blockedcount": "eu_Contador bloqueados",
+          "waitedtime": "eu_Tiempo en espera",
+          "waitedcount": "eu_Contador en espera",
+          "lockname": "eu_Nombre del bloqueo",
+          "stacktrace": "eu_Stacktrace",
+          "show": "eu_Mostrar",
+          "hide": "eu_Ocultar"
+        }
+      },
+      "gc": {
+        "title": "eu_Colecciones de basura",
+        "marksweepcount": "eu_Mark Sweep count",
+        "marksweeptime": "eu_Mark Sweep time",
+        "scavengecount": "eu_Scavenge count",
+        "scavengetime": "eu_Scavenge time"
+      },
+      "http": {
+        "title": "eu_Peticiones HTTP (eventos por segundo)",
+        "active": "eu_Peticiones activas:",
+        "total": "eu_Peticiones totales:",
+        "table": {
+          "code": "eu_Código",
+          "count": "eu_Recuento",
+          "mean": "eu_Media",
+          "average": "eu_Promedio"
+        },
+        "code": {
+          "ok": "eu_Ok",
+          "notfound": "eu_No encontrado",
+          "servererror": "eu_Error de servidor"
+        }
+      }
+    },
+    "servicesstats": {
+      "title": "eu_Estadísticas de servicios (tiempo en milisegundos)",
+      "table": {
+        "name": "eu_Nombre del servicio",
+        "count": "eu_Contador",
+        "mean": "eu_Media",
+        "min": "eu_Min",
+        "max": "eu_Max",
+        "p50": "eu_p50",
+        "p75": "eu_p75",
+        "p95": "eu_p95",
+        "p99": "eu_p99"
+      }
+    },
+    "cache": {
+      "title": "eu_Estadísticas de cache",
+      "cachename": "eu_Nombre cache",
+      "hits": "eu_Accesos",
+      "misses": "eu_Fallos",
+      "evictions": "eu_Contador desalojo"
+    },
+    "datasource": {
+      "usage": "eu_Uso",
+      "title": "eu_Estadísticas de la fuente de datos (tiempo en milisegundos)",
+      "name": "eu_Uso del pool",
+      "count": "eu_Recuento",
+      "mean": "eu_Media",
+      "min": "eu_Min",
+      "max": "eu_Max",
+      "p50": "eu_p50",
+      "p75": "eu_p75",
+      "p95": "eu_p95",
+      "p99": "eu_p99"
+    }
+  }
+}

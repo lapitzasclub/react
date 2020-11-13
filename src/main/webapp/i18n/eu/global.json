@@ -1,0 +1,139 @@
+{
+  "global": {
+    "title": "eu_IVAP",
+    "browsehappy": "eu_Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=es\">actualice su navegador</a> para mejorar su experiencia.",
+    "menu": {
+      "home": "eu_Inicio",
+      "jhipster-needle-menu-add-element": "eu_JHipster will add additional menu entries here (do not translate!)",
+      "entities": {
+        "main": "eu_Entidades",
+        "jhipster-needle-menu-add-entry": "eu_JHipster will add additional entities here (do not translate!)"
+      },
+      "account": {
+        "main": "eu_Cuenta",
+        "settings": "eu_Ajustes",
+        "password": "eu_Contraseña",
+        "sessions": "eu_Sesiones",
+        "login": "eu_Iniciar sesión",
+        "logout": "eu_Cerrar la sesión",
+        "register": "eu_Crear una cuenta"
+      },
+      "admin": {
+        "main": "eu_Administración",
+        "userManagement": "eu_Gestión de usuarios",
+        "tracker": "eu_Registro de usuarios",
+        "metrics": "eu_Métricas",
+        "health": "eu_Salud",
+        "configuration": "eu_Configuración",
+        "logs": "eu_Logs",
+        "audits": "eu_Auditorías",
+        "apidocs": "eu_API",
+        "database": "eu_Base de datos",
+        "jhipster-needle-menu-add-admin-element": "eu_JHipster will add additional menu entries here (do not translate!)"
+      },
+      "language": "eu_Idioma"
+    },
+    "form": {
+      "username.label": "eu_Usuario",
+      "username.placeholder": "eu_Nombre de usuario",
+      "currentpassword.label": "eu_Contraseña actual",
+      "currentpassword.placeholder": "eu_Contraseña actual",
+      "newpassword.label": "eu_Nueva contraseña",
+      "newpassword.placeholder": "eu_Nueva contraseña",
+      "confirmpassword.label": "eu_Confirmación de la nueva contraseña",
+      "confirmpassword.placeholder": "eu_Confirmación de la nueva contraseña",
+      "email.label": "eu_Correo electrónico",
+      "email.placeholder": "eu_Su correo electrónico"
+    },
+    "messages": {
+      "info": {
+        "authenticated": {
+          "prefix": "eu_Si desea ",
+          "link": "eu_iniciar sesión",
+          "suffix": "eu_, puede intentar con las cuentas predeterminadas:<br/>- Administrador (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuario=\"user\" y contraseña=\"user\")."
+        },
+        "register": {
+          "noaccount": "eu_¿Aún no tienes una cuenta?",
+          "link": "eu_Crea una cuenta"
+        }
+      },
+      "error": {
+        "dontmatch": "eu_¡La contraseña y la confirmación de contraseña no coinciden!"
+      },
+      "validate": {
+        "newpassword": {
+          "required": "eu_Se requiere que ingrese una contraseña.",
+          "minlength": "eu_Se requiere que su contraseña tenga por lo menos 4 caracteres",
+          "maxlength": "eu_Su contraseña no puede tener más de 50 caracteres",
+          "strength": "eu_Seguridad de la contraseña:"
+        },
+        "confirmpassword": {
+          "required": "eu_Se requiere que confirme la contraseña.",
+          "minlength": "eu_Se requiere que su contraseña de confirmación tenga por lo menos 4 caracteres",
+          "maxlength": "eu_Su contraseña de confirmación no puede tener más de 50 caracteres"
+        },
+        "email": {
+          "required": "eu_Se requiere un correo electrónico.",
+          "invalid": "eu_Su correo electrónico no es válido.",
+          "minlength": "eu_Se requiere que su correo electrónico tenga por lo menos 5 caracteres",
+          "maxlength": "eu_Su correo electrónico no puede tener más de 50 caracteres"
+        }
+      }
+    },
+    "field": {
+      "id": "eu_ID"
+    },
+    "ribbon": {
+      "dev": "eu_Desarrollo"
+    },
+    "item-count": "eu_Mostrando {{first}} - {{second}} de {{total}} elementos."
+  },
+  "entity": {
+    "action": {
+      "addblob": "eu_Añadir fichero",
+      "addimage": "eu_Añadir imagen",
+      "back": "eu_Volver",
+      "cancel": "eu_Cancelar",
+      "delete": "eu_Eliminar",
+      "edit": "eu_Editar",
+      "open": "eu_Abrir",
+      "save": "eu_Guardar",
+      "view": "eu_Vista"
+    },
+    "detail": {
+      "field": "eu_Campo",
+      "value": "eu_Valor"
+    },
+    "delete": {
+      "title": "eu_Confirmar operación de borrado"
+    },
+    "validation": {
+      "required": "eu_Este campo es obligatorio.",
+      "minlength": "eu_Este campo requiere al menos {{min}} caracteres.",
+      "maxlength": "eu_Este campo no puede superar más de {{max}} caracteres.",
+      "min": "eu_Este campo debe ser mayor que {{min}}.",
+      "max": "eu_Este campo no puede ser mayor que {{max}}.",
+      "minbytes": "eu_Este campo debe tener como mínimo {{min}} bytes.",
+      "maxbytes": "eu_Este campo no puede tener más de {{max}} bytes.",
+      "pattern": "eu_Este campo debe seguir el patrón {{pattern}}.",
+      "number": "eu_Este campo debe ser un número.",
+      "datetimelocal": "eu_Este campo debe ser una fecha y hora."
+    }
+  },
+  "error": {
+    "internalServerError": "eu_Error interno en el servidor",
+    "server.not.reachable": "eu_Servidor no accesible",
+    "url.not.found": "eu_No existe",
+    "NotNull": "eu_¡El campo {{fieldName}} no puede estar vacío!",
+    "Size": "eu_¡El campo {{fieldName}} no cumple con los requisitos de tamaño mínimo/máximo!",
+    "userexists": "eu_¡El nombre de usuario ya existe!",
+    "emailexists": "eu_¡La cuenta de correo ya está en uso!",
+    "idexists": "eu_Un/a nuevo/a {{entityName}} no puede tener ID",
+    "idnull": "eu_ID inválido",
+    "file": {
+      "could.not.extract": "eu_Could not extract file",
+      "not.image": "eu_File was expected to be an image but was found to be \"{{ fileType }}\""
+    }
+  },
+  "footer": "eu_Pie de página"
+}

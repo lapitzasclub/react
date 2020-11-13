@@ -1,0 +1,29 @@
+{
+  "health": {
+    "title": "eu_Control de salud",
+    "refresh.button": "eu_Refrescar",
+    "stacktrace": "eu_Stacktrace",
+    "details": {
+      "details": "eu_Detalles",
+      "properties": "eu_Propiedades",
+      "name": "eu_Nombre",
+      "value": "eu_Valor",
+      "error": "eu_Error"
+    },
+    "indicator": {
+      "diskSpace": "eu_Espacio en disco",
+      "mail": "eu_Email",
+      "ping": "eu_Application",
+      "db": "eu_Database"
+    },
+    "table": {
+      "service": "eu_Nombre del servicio",
+      "status": "eu_Estado"
+    },
+    "status": {
+      "UNKNOWN": "eu_UNKNOWN",
+      "UP": "eu_LEVANTADO",
+      "DOWN": "eu_CAÍDO"
+    }
+  }
+}

@@ -29,6 +29,11 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
 import { faRoad } from '@fortawesome/free-solid-svg-icons/faRoad';
 import { faCloud } from '@fortawesome/free-solid-svg-icons/faCloud';
 
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons/faMapMarkerAlt';
+import { faUserFriends } from '@fortawesome/free-solid-svg-icons/faUserFriends';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons/faCalendarAlt';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 export const loadIcons = () => {
@@ -62,6 +67,10 @@ export const loadIcons = () => {
     faRoad,
     faCloud,
     faTimesCircle,
-    faSearch
+    faSearch,
+    faMapMarkerAlt,
+    faUserFriends,
+    faBriefcase,
+    faCalendarAlt
   );
 };

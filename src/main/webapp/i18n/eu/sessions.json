@@ -1,0 +1,15 @@
+{
+  "sessions": {
+    "title": "eu_Sesiones activas para [<strong>{{username}}</strong>]",
+    "table": {
+      "ipaddress": "eu_Dirección IP",
+      "useragent": "eu_Agente de usuario",
+      "date": "eu_Fecha",
+      "button": "eu_Invalidar"
+    },
+    "messages": {
+      "success": "eu_<strong>¡Sesión invalidada!</strong>",
+      "error": "eu_<strong>¡Ha ocurrido un error!</strong> La sesión no puede ser invalidada."
+    }
+  }
+}

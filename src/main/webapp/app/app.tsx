@@ -21,7 +21,7 @@ import AppRoutes from 'app/routes';
 
 const baseHref = document.querySelector('base').getAttribute('href').replace(/\/$/, '');
 
-export interface IAppProps extends StateProps, DispatchProps {}
+export interface IAppProps extends StateProps, DispatchProps { }
 
 export const App = (props: IAppProps) => {
   useEffect(() => {
@@ -29,7 +29,7 @@ export const App = (props: IAppProps) => {
     props.getProfile();
   }, []);
 
-  const paddingTop = '60px';
+  const paddingTop = '100px';
   return (
     <Router basename={baseHref}>
       <div className="app-container" style={{ paddingTop }}>
@@ -46,11 +46,9 @@ export const App = (props: IAppProps) => {
           />
         </ErrorBoundary>
         <div className="container-fluid view-container" id="app-view-container">
-          <Card className="jh-card">
-            <ErrorBoundary>
-              <AppRoutes />
-            </ErrorBoundary>
-          </Card>
+          <ErrorBoundary>
+            <AppRoutes />
+          </ErrorBoundary>
           <Footer />
         </div>
       </div>

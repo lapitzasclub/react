@@ -1,0 +1,9 @@
+{
+  "activate": {
+    "title": "eu_Activación",
+    "messages": {
+      "success": "<strong>eu_Su cuenta ha sido activada.</strong> Por favor, ",
+      "error": "<strong>eu_Su cuenta no pudo ser activada.</strong> Por favor, utilice el formulario de inscripción para registrarse."
+    }
+  }
+}

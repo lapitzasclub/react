@@ -1,0 +1,30 @@
+{
+  "userManagement": {
+    "home": {
+      "title": "eu_Usuarios",
+      "createLabel": "eu_Crear un nuevo usuario",
+      "createOrEditLabel": "eu_Crear o editar un usuario"
+    },
+    "created": "eu_Se creó un nuevo usuario con identificador {{ param }}",
+    "updated": "eu_Se actualizó el usuario con identificador {{ param }}",
+    "deleted": "eu_Se borró el usuario con identificador {{ param }}",
+    "delete": {
+      "question": "eu_¿Seguro que quieres eliminar el usuario {{ login }}?"
+    },
+    "detail": {
+      "title": "eu_Usuario"
+    },
+    "login": "eu_Login",
+    "firstName": "eu_Nombre",
+    "lastName": "eu_Apellidos",
+    "email": "eu_Email",
+    "activated": "eu_Activado",
+    "deactivated": "eu_Desactivado",
+    "profiles": "eu_Perfiles",
+    "langKey": "eu_Idioma",
+    "createdBy": "eu_Creado por",
+    "createdDate": "eu_Fecha de creación",
+    "lastModifiedBy": "eu_Modificado por",
+    "lastModifiedDate": "eu_Fecha de modificación"
+  }
+}

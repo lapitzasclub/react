@@ -1,0 +1,11 @@
+{
+  "logs": {
+    "title": "eu_Logs",
+    "nbloggers": "eu_Hay {{ total }} registros.",
+    "filter": "eu_Filtro",
+    "table": {
+      "name": "eu_Nombre",
+      "level": "eu_Nivel"
+    }
+  }
+}
