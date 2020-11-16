@@ -20,6 +20,10 @@ import ofertaEmpleo, {
 import publicacion, {
   PublicacionState
 } from 'app/entities/publicacion/publicacion.reducer';
+// prettier-ignore
+import notificacion, {
+  NotificacionState
+} from 'app/entities/notificacion/notificacion.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -35,6 +39,7 @@ export interface IRootState {
   readonly settings: SettingsState;
   readonly ofertaEmpleo: OfertaEmpleoState;
   readonly publicacion: PublicacionState;
+  readonly notificacion: NotificacionState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -52,6 +57,7 @@ const rootReducer = combineReducers<IRootState>({
   settings,
   ofertaEmpleo,
   publicacion,
+  notificacion,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

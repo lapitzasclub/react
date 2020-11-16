@@ -33,6 +33,8 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons/faMapMarkerAlt
 import { faUserFriends } from '@fortawesome/free-solid-svg-icons/faUserFriends';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons/faBriefcase';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons/faCalendarAlt';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons/faAngleRight';
+import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -71,6 +73,8 @@ export const loadIcons = () => {
     faMapMarkerAlt,
     faUserFriends,
     faBriefcase,
-    faCalendarAlt
+    faCalendarAlt,
+    faAngleRight,
+    faTimes
   );
 };

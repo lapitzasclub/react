@@ -2,7 +2,7 @@
   "reactApp": {
     "ofertaEmpleo": {
       "home": {
-        "title": "Oferta Empleos",
+        "title": "Empleo público",
         "createLabel": "Crear nuevo Oferta Empleo",
         "createOrEditLabel": "Crear o editar Oferta Empleo",
         "notFound": "Ningún Oferta Empleos encontrado"
@@ -16,11 +16,11 @@
       "detail": {
         "title": "Oferta Empleo"
       },
-      "title": "Title",
-      "place": "Place",
-      "slots": "Slots",
-      "contract": "Contract",
-      "term": "Term"
+      "title": "Título",
+      "place": "Lugar",
+      "slots": "Nº de plazas",
+      "contract": "Tipo de contrato",
+      "term": "Plazo"
     }
   }
 }

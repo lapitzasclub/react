@@ -1,0 +1,35 @@
+@import '../../bootstrap-variables';
+
+#div-notificacion {
+  .card-text {
+    margin-bottom: 0.5rem;
+    color: #8b8b8b;
+  }
+
+  h2 {
+    color: #943c59;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: #b72a5e;
+    margin-bottom: 0.25rem;
+  }
+
+  .date {
+    color: #8b8b8b;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .mark-all-read {
+    font-size: 0.8rem;
+    padding-top: 8px;
+  }
+
+  .is-read {
+    opacity: 0.5;
+  }
+}

@@ -10,7 +10,7 @@ import { getEntity } from './oferta-empleo.reducer';
 import { IOfertaEmpleo } from 'app/shared/model/oferta-empleo.model';
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
 
-export interface IOfertaEmpleoDetailProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> {}
+export interface IOfertaEmpleoDetailProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> { }
 
 export const OfertaEmpleoDetail = (props: IOfertaEmpleoDetailProps) => {
   useEffect(() => {
@@ -20,17 +20,19 @@ export const OfertaEmpleoDetail = (props: IOfertaEmpleoDetailProps) => {
   const { ofertaEmpleoEntity } = props;
   return (
     <Row>
+      <Col xs-12 className="mb-3">
+        <Button tag={Link} to="/oferta-empleo" replace outline color="primary" className="float-right close">
+          <FontAwesomeIcon icon="times" size="lg"/>{' '}
+          <span className="d-none d-md-inline">
+            <Translate contentKey="entity.action.back">Back</Translate>
+          </span>
+        </Button>
+      </Col>
       <Col md="8">
         <h2>
-          <Translate contentKey="reactApp.ofertaEmpleo.detail.title">OfertaEmpleo</Translate> [<b>{ofertaEmpleoEntity.id}</b>]
+          {ofertaEmpleoEntity.title}
         </h2>
         <dl className="jh-entity-details">
-          <dt>
-            <span id="title">
-              <Translate contentKey="reactApp.ofertaEmpleo.title">Title</Translate>
-            </span>
-          </dt>
-          <dd>{ofertaEmpleoEntity.title}</dd>
           <dt>
             <span id="place">
               <Translate contentKey="reactApp.ofertaEmpleo.place">Place</Translate>
@@ -56,19 +58,6 @@ export const OfertaEmpleoDetail = (props: IOfertaEmpleoDetailProps) => {
           </dt>
           <dd>{ofertaEmpleoEntity.term}</dd>
         </dl>
-        <Button tag={Link} to="/oferta-empleo" replace color="info">
-          <FontAwesomeIcon icon="arrow-left" />{' '}
-          <span className="d-none d-md-inline">
-            <Translate contentKey="entity.action.back">Back</Translate>
-          </span>
-        </Button>
-        &nbsp;
-        <Button tag={Link} to={`/oferta-empleo/${ofertaEmpleoEntity.id}/edit`} replace color="primary">
-          <FontAwesomeIcon icon="pencil-alt" />{' '}
-          <span className="d-none d-md-inline">
-            <Translate contentKey="entity.action.edit">Edit</Translate>
-          </span>
-        </Button>
       </Col>
     </Row>
   );

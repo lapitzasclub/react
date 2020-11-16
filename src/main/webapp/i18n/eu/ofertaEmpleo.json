@@ -1,0 +1,26 @@
+{
+  "reactApp": {
+    "ofertaEmpleo": {
+      "home": {
+        "title": "eu_Empleo público",
+        "createLabel": "eu_Crear nuevo Oferta Empleo",
+        "createOrEditLabel": "eu_Crear o editar Oferta Empleo",
+        "notFound": "eu_Ningún Oferta Empleos encontrado"
+      },
+      "created": "eu_Un nuevo Oferta Empleo ha sido creado con el identificador {{ param }}",
+      "updated": "eu_Un Oferta Empleo ha sido actualizado con el identificador {{ param }}",
+      "deleted": "eu_Un Oferta Empleo ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "eu_¿Seguro que quiere eliminar Oferta Empleo {{ id }}?"
+      },
+      "detail": {
+        "title": "eu_Oferta Empleo"
+      },
+      "title": "eu_Título",
+      "place": "eu_Lugar",
+      "slots": "eu_Nº de plazas",
+      "contract": "eu_Tipo de contrato",
+      "term": "eu_Plazo"
+    }
+  }
+}

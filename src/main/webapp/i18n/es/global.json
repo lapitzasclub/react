@@ -9,6 +9,7 @@
         "main": "Entidades",
         "ofertaEmpleo": "Oferta Empleo",
         "publicacion": "Publicacion",
+        "notificacion": "Notificacion",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

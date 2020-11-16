@@ -23,14 +23,3 @@ export const Brand = props => (
     <span className="navbar-version">{appConfig.VERSION}</span>
   </NavbarBrand>
 );
-
-export const Home = props => (
-  <NavItem>
-    <NavLink tag={Link} to="/" className="d-flex align-items-center">
-      <span>
-        <FontAwesomeIcon icon="home" className="mr-2" />
-        <Translate contentKey="global.menu.home">Home</Translate>
-      </span>
-    </NavLink>
-  </NavItem>
-);

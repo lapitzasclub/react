@@ -1,0 +1,37 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "isRead",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "summary",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    }
+  ],
+  "changelogDate": "20201116094235",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "notificacion",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "infinite-scroll"
+}

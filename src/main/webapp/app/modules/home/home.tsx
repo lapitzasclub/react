@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { IRootState } from 'app/shared/reducers';
-import { Empleo } from '../empleo/empleo';
 
 export type IHomeProp = StateProps;
 

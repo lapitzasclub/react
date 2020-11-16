@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 import { connect } from 'react-redux';
 import { Link, RouteComponentProps } from 'react-router-dom';
-import { Button, Col, Row, Table } from 'reactstrap';
+import { Col, Row, Card, CardTitle } from 'reactstrap';
 import { Translate, ICrudGetAllAction, getSortState, IPaginationBaseState } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -13,7 +13,9 @@ import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
 import { ITEMS_PER_PAGE } from 'app/shared/util/pagination.constants';
 import { overridePaginationStateWithQueryParams } from 'app/shared/util/entity-utils';
 
-export interface IOfertaEmpleoProps extends StateProps, DispatchProps, RouteComponentProps<{ url: string }> {}
+import './oferta-empleo.scss';
+
+export interface IOfertaEmpleoProps extends StateProps, DispatchProps, RouteComponentProps<{ url: string }> { }
 
 export const OfertaEmpleo = (props: IOfertaEmpleoProps) => {
   const [paginationState, setPaginationState] = useState(
@@ -77,7 +79,7 @@ export const OfertaEmpleo = (props: IOfertaEmpleoProps) => {
 
   const { ofertaEmpleoList, match, loading } = props;
   return (
-    <div>
+    <div id="div-oferta-empleo">
       <h2 id="oferta-empleo-heading">
         <Translate contentKey="reactApp.ofertaEmpleo.home.title">Oferta Empleos</Translate>
       </h2>
@@ -91,64 +93,59 @@ export const OfertaEmpleo = (props: IOfertaEmpleoProps) => {
           initialLoad={false}
         >
           {ofertaEmpleoList && ofertaEmpleoList.length > 0 ? (
-            <Table responsive>
-              <thead>
-                <tr>
-                  <th className="hand" onClick={sort('id')}>
-                    <Translate contentKey="global.field.id">ID</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th className="hand" onClick={sort('title')}>
-                    <Translate contentKey="reactApp.ofertaEmpleo.title">Title</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th className="hand" onClick={sort('place')}>
-                    <Translate contentKey="reactApp.ofertaEmpleo.place">Place</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th className="hand" onClick={sort('slots')}>
-                    <Translate contentKey="reactApp.ofertaEmpleo.slots">Slots</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th className="hand" onClick={sort('contract')}>
-                    <Translate contentKey="reactApp.ofertaEmpleo.contract">Contract</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th className="hand" onClick={sort('term')}>
-                    <Translate contentKey="reactApp.ofertaEmpleo.term">Term</Translate> <FontAwesomeIcon icon="sort" />
-                  </th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                {ofertaEmpleoList.map((ofertaEmpleo, i) => (
-                  <tr key={`entity-${i}`}>
-                    <td>
-                      <Button tag={Link} to={`${match.url}/${ofertaEmpleo.id}`} color="link" size="sm">
-                        {ofertaEmpleo.id}
-                      </Button>
-                    </td>
-                    <td>{ofertaEmpleo.title}</td>
-                    <td>{ofertaEmpleo.place}</td>
-                    <td>{ofertaEmpleo.slots}</td>
-                    <td>{ofertaEmpleo.contract}</td>
-                    <td>{ofertaEmpleo.term}</td>
-                    <td className="text-right">
-                      <div className="btn-group flex-btn-group-container">
-                        <Button tag={Link} to={`${match.url}/${ofertaEmpleo.id}`} color="info" size="sm">
-                          <FontAwesomeIcon icon="eye" />{' '}
-                          <span className="d-none d-md-inline">
-                            <Translate contentKey="entity.action.view">View</Translate>
-                          </span>
-                        </Button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
+            <Row>
+              <Col md="12">
+                <div className="ofertas">
+                  {ofertaEmpleoList.map((ofertaEmpleo, i) => (
+                    <Card body className="my-4 mx-1" key={`entity-${i}`}>
+                      <Link to={`${match.url}/${ofertaEmpleo.id}`}>
+                        <Row>
+                          <Col>
+                            <CardTitle tag="h5" className="text-uppercase font-weight-bold">
+                              {ofertaEmpleo.title}
+                            </CardTitle>
+                            <Row className="oferta-item">
+                              <Col xs="1" className="icon">
+                                <FontAwesomeIcon icon="map-marker-alt" />
+                              </Col>
+                              <Col><strong>{ofertaEmpleo.place}</strong></Col>
+                            </Row>
+                            <Row className="oferta-item">
+                              <Col xs="1" className="icon">
+                                <FontAwesomeIcon icon="user-friends" />
+                              </Col>
+                              <Col><Translate contentKey="reactApp.ofertaEmpleo.slots" />: {ofertaEmpleo.slots}</Col>
+                            </Row>
+                            <Row className="oferta-item">
+                              <Col xs="1" className="icon">
+                                <FontAwesomeIcon icon="briefcase" />
+                              </Col>
+                              <Col><Translate contentKey="reactApp.ofertaEmpleo.contract" />: {ofertaEmpleo.contract}</Col>
+                            </Row>
+                            <Row className="oferta-item">
+                              <Col xs="1" className="icon">
+                                <FontAwesomeIcon icon="calendar-alt" />
+                              </Col>
+                              <Col>{ofertaEmpleo.term}</Col>
+                            </Row>
+                          </Col>
+                          <Col xs="1">
+                            <FontAwesomeIcon icon="angle-right" size="lg" className="caret" />
+                          </Col>
+                        </Row>
+                      </Link>
+                    </Card>
+                  ))}
+                </div>
+              </Col>
+            </Row>
           ) : (
-            !loading && (
-              <div className="alert alert-warning">
-                <Translate contentKey="reactApp.ofertaEmpleo.home.notFound">No Oferta Empleos found</Translate>
-              </div>
-            )
-          )}
+              !loading && (
+                <div className="alert alert-warning">
+                  <Translate contentKey="reactApp.ofertaEmpleo.home.notFound">No Oferta Empleos found</Translate>
+                </div>
+              )
+            )}
         </InfiniteScroll>
       </div>
     </div>
