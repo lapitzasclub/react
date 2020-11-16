@@ -78,6 +78,15 @@ export const Notificacion = (props: INotificacionProps) => {
   };
 
   const { notificacionList, match, loading } = props;
+
+  const notificacionListByDate: any = {};
+  for (const notificacion of notificacionList) {
+    if (!notificacionListByDate[notificacion.date]){
+      notificacionListByDate[notificacion.date] = [];
+    }
+    notificacionListByDate[notificacion.date].push(notificacion);
+  }
+
   return (
     <div id="div-notificacion">
       <h2 id="notificacion-heading">
